@@ -1,16 +1,22 @@
-_(Udacity: Data Engineering Nano Degree) | jukka.kansanaho@gmail.com | 2019-05-04_
-_This project is a part of [Udacity's Data Engineer Nano Degree](https://eu.udacity.com/course/data-engineer-nanodegree--nd027)._
-
-# PROJECT-3: Data Warehouse
+# PROJECT - GROUP 10 - Data Warehouse - 232
 
 ## Quick start
 
 - Install postgresql: https://www.postgresql.org/download/
-  Or running Dockerfile: docker build -t my_postgres_image .
+  Or running Dockerfile: 
+```bash
+  docker build -t my_postgres_image .
   docker run --name my_postgres_container -p 5432:5432 -d my_postgres_image
+```
 
-- Install pgAdmin4: https://www.pgadmin.org/download/
-
+```bash
+configuration:
+- DATABASE="postgres"
+- USERNAME="postgres"
+- PASSWORD="123456"
+- HOST="localhost"
+- PORT="5432"
+```
 - Install Python libraries:
 
 ```bash
@@ -18,9 +24,14 @@ pip install psycopg2-binary
 pip install python-decouple
 ```
 
+or 
+```bash
+pip install -r requirements.txt
+```
+
 - Change PASSWORD in .env file to your postgresql password.
 
-- Run the program:
+- Run the program: Data will be processing and updating to PostgreSQL Database
 
 ```bash
 python main.py
@@ -121,4 +132,4 @@ FROM songplays;
 
 ## Summary
 
-Project-3 provides customer startup Sparkify tools to analyse their service data and help them answer their key business questions like "Who listened which song and when?"
+ Project provide tools to help users analyse service data and help them answer their key business questions like "Who listened which song and when?"

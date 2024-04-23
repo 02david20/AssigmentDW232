@@ -1,4 +1,4 @@
-# PROJECT - GROUP 10 - Data Warehouse - 232
+# PROJECT - GROUP 07 - Data Warehouse - 232
 
 ## Quick start
 
